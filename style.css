@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+ }
+ .container{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(112, 112, 184, 0.7),rgba(102, 102, 204, 0.7)), url(images/download.jfif);
+    background-position: center;
+    position:relative;
+ }
+ 
+ .form-box{
+     width:90%;
+     max-width: 450px;
+     position:absolute;
+     transform: translate(-50%,-50%);
+     background-color: #fff;
+     padding: 50px 40px;
+     text-align: center;
+     top:50%;
+     left: 50%;
+     border-radius:15px;
+    }
+.form-box h1{
+    color:blueviolet;
+    font-size: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 35px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field{
+    background: rgb(2, 183, 238);
+    margin:15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+input{
+    width:100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 10px;
+    color: rgb(183, 197, 207);
+}
+.form-box p{
+    text-align: left;
+    font-size: 17px;
+}
+.form-box p a{
+  
+    color:rgb(61, 107, 143)
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 20px;
+    height: 25px;
+    size: 20px;
+}
+.btn-field button{
+    flex-basis: 50%;
+    background: blueviolet;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-field input text{
+    text-size-adjust: 30px;
+}
